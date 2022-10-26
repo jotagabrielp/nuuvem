@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuuuuvem</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        color: #ffc0cb;
+        width: fit-content;
+      }
+      a {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a onclick="soma()">Soma</a>
+      <a onclick="subtrai()">Subtração</a>
+      <a onclick="multiplica()">Multiplicação</a>
+      <a onclick="divide()">Divisão</a>
+      <a onclick="piso()">Piso</a>
+      <a onclick="teto()">Teto</a>
+      <a style="color: #fff" onclick="banana()">banana</a>
+    </div>
+  </body>
+  <script>
+    const soma = (a = Number(prompt()), b = Number(prompt())) => alert(a + b);
+    const multiplica = (a = Number(prompt()), b = Number(prompt())) => alert(a * b);
+    const subtrai = (a = Number(prompt()), b = Number(prompt())) => alert(a - b);
+    const divide = (a = Number(prompt()), b = Number(prompt())) => alert(a / b);
+    const piso = (a = Number(prompt())) => alert(Math.floor(a));
+    const teto = (a = Number(prompt())) => alert(Math.ceil(a));
+    const banana = () =>
+      alert("'b' + 'a' + + 'a' + 'a' = " + "b" + "a" + +"a" + "a");
+  </script>
+</html>
